@@ -138,7 +138,7 @@ function App() {
         <Tabs categories={categories} activeTab={activeTab} onChange={setActiveTab} />
       </section>
 
-      <p className="results-count">
+      <p className="results-count" aria-live="polite">
         Найдено рецептов: <strong>{filteredRecipes.length}</strong>
       </p>
 

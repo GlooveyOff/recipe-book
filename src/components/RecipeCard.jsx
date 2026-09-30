@@ -32,6 +32,7 @@ function RecipeCard({ recipe, searchQuery, onToggleFavorite, onEdit, onDelete })
           className={`favorite-button ${recipe.isFavorite ? 'favorite-button--active' : ''}`}
           type="button"
           onClick={() => onToggleFavorite(recipe.id)}
+          aria-pressed={recipe.isFavorite}
           aria-label={recipe.isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
         >
           {recipe.isFavorite ? '★' : '☆'}
